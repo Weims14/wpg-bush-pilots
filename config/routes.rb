@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :upcoming_games
   resources :schedules
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Team1:</strong>
+  <%= @upcoming_game.team1 %>
+</p>
+
+<p>
+  <strong>Team2:</strong>
+  <%= @upcoming_game.team2 %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @upcoming_game.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @upcoming_game.time %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @upcoming_game.location %>
+</p>
+
+<%= link_to 'Edit', edit_upcoming_game_path(@upcoming_game) %> |
+<%= link_to 'Back', upcoming_games_path %>

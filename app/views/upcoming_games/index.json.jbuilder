@@ -1,0 +1,1 @@
+json.array! @upcoming_games, partial: 'upcoming_games/upcoming_game', as: :upcoming_game

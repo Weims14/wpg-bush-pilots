@@ -1,0 +1,2 @@
+class UpcomingGame < ApplicationRecord
+end
