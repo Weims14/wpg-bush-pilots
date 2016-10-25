@@ -8,5 +8,6 @@ class UpcomingGamesController < InheritedResources::Base
       params.require(:upcoming_game).permit(:team1, :team2, :date, :time, :location)
     end
 
-end
+    
 
+end
