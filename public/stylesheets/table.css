@@ -1,11 +1,4 @@
-#table
+h1
 {
-  width: 5%;
-}
-
-
-#table tr:nth-child(odd)
-{
-   background-color: #ccc;
-   color: #fff;
+  color: #fff;
 }

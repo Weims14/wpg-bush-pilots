@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :goalies
+  resources :skaters
   resources :upcoming_games
   resources :schedules
   devise_for :admin_users, ActiveAdmin::Devise.config

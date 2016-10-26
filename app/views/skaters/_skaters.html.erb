@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<div id="container">
+  <div class="col-sm-4">
+    <h1>Skaters</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Position</th>
+          <th>GP</th>
+          <th>Goals</th>
+          <th>Assists</th>
+          <th>Points</th>
+          <th>Pim</th>
+        </tr>
+      </thead>
+      <%= render partial: 'skaters/skater', collection: skaters %>
+    </table>
+  </div>
+</div>

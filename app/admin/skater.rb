@@ -1,8 +1,6 @@
-ActiveAdmin.register Schedule do
+ActiveAdmin.register Skater do
 
-
-    permit_params :team1, :score, :team2, :date, :time, :location
-
+  permit_params :number, :name, :goals, :assists, :points, :pim, :pos, :gp
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #

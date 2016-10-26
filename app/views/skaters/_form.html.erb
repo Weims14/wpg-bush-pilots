@@ -1,0 +1,57 @@
+<%= form_for(skater) do |f| %>
+  <% if skater.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(skater.errors.count, "error") %> prohibited this skater from being saved:</h2>
+
+      <ul>
+      <% skater.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %>
+    <%= f.text_field :number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :goals %>
+    <%= f.text_field :goals %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assists %>
+    <%= f.text_field :assists %>
+  </div>
+
+  <div class="field">
+    <%= f.label :points %>
+    <%= f.text_field :points %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pim %>
+    <%= f.text_field :pim %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pos %>
+    <%= f.text_field :pos %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gp %>
+    <%= f.text_field :gp %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
