@@ -1,10 +1,9 @@
 <p id="notice"><%= notice %></p>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 <div id="container">
   <div class="col-sm-4">
     <h1>Skaters</h1>
-    <table>
+    <table class="table-bordered">
       <thead>
         <tr>
           <th>Number</th>
@@ -17,7 +16,7 @@
           <th>Pim</th>
         </tr>
       </thead>
-      <%= render partial: 'skaters/skater', collection: skaters %>
+      <%= render partial: 'skaters/skater', collection: skaters.order(number: :asc) %>
     </table>
   </div>
 </div>

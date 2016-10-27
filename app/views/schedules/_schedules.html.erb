@@ -3,7 +3,7 @@
 <div id="container">
     <div class="col-sm-4">
       <h1>Bush Pilots Schedule</h1>
-      <table>
+      <table class="table-bordered">
         <thead>
           <tr>
             <th>Team1</th>
@@ -14,10 +14,7 @@
             <th>Location</th>
           </tr>
         </thead>
-        <%= render partial: 'schedule', collection: schedules %>
+        <%= render partial: 'schedules/schedule', collection: schedules %>
       </table>
     </div>
-
-
-
-</div>
+  </div>
