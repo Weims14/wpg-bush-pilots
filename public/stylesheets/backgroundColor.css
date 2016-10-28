@@ -1,8 +1,11 @@
+.record
+{
+  text-align: center;
+}
 table
 {
   color: #000;
 }
-
 thead th
 {
   color: #fff;
@@ -15,20 +18,15 @@ nav
   float: none;
   vertical-align: top;
 }
-li
-{
-  color: #fff;
-  display: inline;
-}
 ul
 {
   text-align: center;
 }
+li
+{
+  display: inline;
+}
 img
 {
   width: 100px;
-}
-a
-{
-  text-decoration: none !important;
 }
