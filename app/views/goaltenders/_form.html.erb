@@ -1,0 +1,67 @@
+<%= form_for(goaltender) do |f| %>
+  <% if goaltender.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(goaltender.errors.count, "error") %> prohibited this goaltender from being saved:</h2>
+
+      <ul>
+      <% goaltender.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number %>
+    <%= f.number_field :number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gp %>
+    <%= f.number_field :gp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wins %>
+    <%= f.number_field :wins %>
+  </div>
+
+  <div class="field">
+    <%= f.label :loses %>
+    <%= f.number_field :loses %>
+  </div>
+
+  <div class="field">
+    <%= f.label :otl %>
+    <%= f.number_field :otl %>
+  </div>
+
+  <div class="field">
+    <%= f.label :winpercent %>
+    <%= f.text_field :winpercent %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ga %>
+    <%= f.number_field :ga %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gaa %>
+    <%= f.text_field :gaa %>
+  </div>
+
+  <div class="field">
+    <%= f.label :shutouts %>
+    <%= f.number_field :shutouts %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

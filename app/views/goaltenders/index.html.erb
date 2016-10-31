@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Goaltenders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number</th>
+      <th>Games Played</th>
+      <th>Wins</th>
+      <th>Loses</th>
+      <th>OT Loses</th>
+      <th>Win Percent</th>
+      <th>Goals Against</th>
+      <th>Goals Against average</th>
+      <th>Shutouts</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @goaltenders.each do |goaltender| %>
+      <tr>
+        <td><%= goaltender.name %></td>
+        <td><%= goaltender.number %></td>
+        <td><%= goaltender.gp %></td>
+        <td><%= goaltender.wins %></td>
+        <td><%= goaltender.loses %></td>
+        <td><%= goaltender.otl %></td>
+        <td><%= goaltender.winpercent %></td>
+        <td><%= goaltender.ga %></td>
+        <td><%= goaltender.gaa %></td>
+        <td><%= goaltender.shutouts %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

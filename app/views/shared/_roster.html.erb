@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div id="container">
+  <div class="col-sm-6">
+    <h1 class="center">Goalies</h1>
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Number</th>
+          <th>GP</th>
+          <th>Wins</th>
+          <th>Loses</th>
+          <th>OT Loses</th>
+          <th>Win %</th>
+          <th>GA</th>
+          <th>GAA</th>
+          <th>Shutouts</th>
+        </tr>
+      </thead>
+        <%= render partial: 'goaltenders/goaltender', collection: goaltenders.order(number: :asc) %>
+   </table>
+   <h1 class="center">Skaters</h1>
+   <table class="table-bordered">
+     <thead>
+       <tr>
+         <th>Number</th>
+         <th>Name</th>
+         <th>Position</th>
+         <th>GP</th>
+         <th>Goals</th>
+         <th>Assists</th>
+         <th>Points</th>
+         <th>Pim</th>
+       </tr>
+     </thead>
+     <%= render partial: 'skaters/skater', collection: skaters.order(number: :asc) %>
+   </table>
+
+  </div>
+</div>

@@ -3,6 +3,7 @@ class SchedulesController < InheritedResources::Base
     @upcoming_games = UpcomingGame.all
     @schedules = Schedule.all
     @skaters = Skater.all
+    @goalies = Goaltender.all
     end
   private
     def schedule_params

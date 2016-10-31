@@ -2,21 +2,22 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <div id="container">
   <div class="col-sm-6">
-    <h1 class="center">Skaters</h1>
+    <h1 class="center">Alumni Skaters</h1>
     <table class="table-bordered">
       <thead>
         <tr>
           <th>Number</th>
           <th>Name</th>
           <th>Position</th>
-          <th>GP</th>
+          <th>Gp</th>
           <th>Goals</th>
           <th>Assists</th>
           <th>Points</th>
           <th>Pim</th>
+          <th>Seasons</th>
         </tr>
       </thead>
-      <%= render partial: 'skaters/skater', collection: skaters.order(number: :asc) %>
+      <%= render partial: 'alumni_skaters/alumni_skater', collection: alumni_skaters.order(number: :asc) %>
     </table>
   </div>
 </div>

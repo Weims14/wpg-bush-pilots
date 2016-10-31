@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @goaltender.name %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @goaltender.number %>
+</p>
+
+<p>
+  <strong>Gp:</strong>
+  <%= @goaltender.gp %>
+</p>
+
+<p>
+  <strong>Wins:</strong>
+  <%= @goaltender.wins %>
+</p>
+
+<p>
+  <strong>Loses:</strong>
+  <%= @goaltender.loses %>
+</p>
+
+<p>
+  <strong>Otl:</strong>
+  <%= @goaltender.otl %>
+</p>
+
+<p>
+  <strong>Winpercent:</strong>
+  <%= @goaltender.winpercent %>
+</p>
+
+<p>
+  <strong>Ga:</strong>
+  <%= @goaltender.ga %>
+</p>
+
+<p>
+  <strong>Gaa:</strong>
+  <%= @goaltender.gaa %>
+</p>
+
+<p>
+  <strong>Shutouts:</strong>
+  <%= @goaltender.shutouts %>
+</p>
+
+<%= link_to 'Edit', edit_goaltender_path(@goaltender) %> |
+<%= link_to 'Back', goaltenders_path %>
