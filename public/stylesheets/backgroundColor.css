@@ -1,4 +1,4 @@
-.record
+.center
 {
   text-align: center;
 }
@@ -29,4 +29,8 @@ li
 img
 {
   width: 100px;
+}
+a{
+  color: #fff !important;
+  text-decoration: none !important;
 }

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Alumni Skaters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Gp</th>
+      <th>Goals</th>
+      <th>Assists</th>
+      <th>Points</th>
+      <th>Pim</th>
+      <th>Seasons</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alumni_skaters.each do |alumni_skater| %>
+      <tr>
+        <td><%= alumni_skater.number %></td>
+        <td><%= alumni_skater.name %></td>
+        <td><%= alumni_skater.position %></td>
+        <td><%= alumni_skater.gp %></td>
+        <td><%= alumni_skater.goals %></td>
+        <td><%= alumni_skater.assists %></td>
+        <td><%= alumni_skater.points %></td>
+        <td><%= alumni_skater.pim %></td>
+        <td><%= alumni_skater.seasons %></td>
+        <td><%= link_to 'Show', alumni_skater %></td>
+        <td><%= link_to 'Edit', edit_alumni_skater_path(alumni_skater) %></td>
+        <td><%= link_to 'Destroy', alumni_skater, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Alumni Skater', new_alumni_skater_path %>

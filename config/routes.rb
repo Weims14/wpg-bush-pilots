@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :alumni_skaters
   resources :goalies
   resources :skaters
   resources :upcoming_games
@@ -9,6 +10,6 @@ Rails.application.routes.draw do
 
   root 'schedules#index'
 
-  get "static_pages/roster.html.erb", to: "static_pages#roster", as: "staticRoster"
+  get "static_pages/roster.html.erb", to: "static_pages#roster", as: "roster"
   get "static_pages/schedule.html.erb", to: "static_pages#schedule", as: "staticSchedule"
 end

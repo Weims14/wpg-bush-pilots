@@ -1,0 +1,1 @@
+json.array! @alumni_skaters, partial: 'alumni_skaters/alumni_skater', as: :alumni_skater

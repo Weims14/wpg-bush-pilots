@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div id="container">
+    <div class="col-sm-6">
+      <h1 class="center">Bush Pilots Schedule</h1>
+      <table class="table-bordered">
+        <thead>
+          <tr>
+            <th>Team1</th>
+            <th>Score</th>
+            <th>Team2</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <%= render partial: 'schedules/schedule', collection: schedules %>
+      </table>
+    </div>
+  </div>

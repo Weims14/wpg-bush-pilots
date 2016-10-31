@@ -21,14 +21,14 @@ pre {
 }
 
 a {
-  color: #fff;
-  text-decoration: none;
+  color: #000;
+
   &:visited {
-    color: #fff;
-    text-decoration: none;
+    color: #666;
   }
 
   &:hover {
+    color: #fff;
     background-color: #000;
   }
 }
@@ -81,8 +81,6 @@ div {
   ul li {
     font-size: 12px;
     list-style: square;
-    text-decoration: none;
-    color: #fff;
   }
 }
 

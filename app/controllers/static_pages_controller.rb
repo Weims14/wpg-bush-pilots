@@ -2,6 +2,7 @@ class StaticPagesController < InheritedResources::Base
 
   def roster
     @skaters = Skater.all
+    @alumnis = AlumniSkater.all
   end
 
   def schedule
