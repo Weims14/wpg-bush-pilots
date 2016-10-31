@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :alumni_goaltenders
   resources :goaltenders
   resources :alumni_skaters
   resources :goalies

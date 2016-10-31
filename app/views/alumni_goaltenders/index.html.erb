@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Alumni Goaltenders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number</th>
+      <th>Gp</th>
+      <th>Wins</th>
+      <th>Loses</th>
+      <th>Otl</th>
+      <th>Winpercent</th>
+      <th>Ga</th>
+      <th>Gaa</th>
+      <th>Shutouts</th>
+      <th>Season</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alumni_goaltenders.each do |alumni_goaltender| %>
+      <tr>
+        <td><%= alumni_goaltender.name %></td>
+        <td><%= alumni_goaltender.number %></td>
+        <td><%= alumni_goaltender.gp %></td>
+        <td><%= alumni_goaltender.wins %></td>
+        <td><%= alumni_goaltender.loses %></td>
+        <td><%= alumni_goaltender.otl %></td>
+        <td><%= alumni_goaltender.winpercent %></td>
+        <td><%= alumni_goaltender.ga %></td>
+        <td><%= alumni_goaltender.gaa %></td>
+        <td><%= alumni_goaltender.shutouts %></td>
+        <td><%= alumni_goaltender.season %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>

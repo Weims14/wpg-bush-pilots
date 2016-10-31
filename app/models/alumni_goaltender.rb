@@ -1,0 +1,2 @@
+class AlumniGoaltender < ApplicationRecord
+end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161031171139) do
+ActiveRecord::Schema.define(version: 20161031181127) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -41,6 +41,22 @@ ActiveRecord::Schema.define(version: 20161031171139) do
     t.datetime "updated_at",                          null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
+  create_table "alumni_goaltenders", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "number"
+    t.integer  "gp"
+    t.integer  "wins"
+    t.integer  "loses"
+    t.integer  "otl"
+    t.float    "winpercent"
+    t.integer  "ga"
+    t.float    "gaa"
+    t.integer  "shutouts"
+    t.integer  "season"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "alumni_skaters", force: :cascade do |t|

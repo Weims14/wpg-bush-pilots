@@ -1,0 +1,2 @@
+module AlumniGoaltendersHelper
+end

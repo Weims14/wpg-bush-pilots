@@ -1,0 +1,2 @@
+json.extract! alumni_goaltender, :id, :name, :number, :gp, :wins, :loses, :otl, :winpercent, :ga, :gaa, :shutouts, :season, :created_at, :updated_at
+json.url alumni_goaltender_url(alumni_goaltender, format: :json)
