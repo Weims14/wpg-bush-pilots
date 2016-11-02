@@ -5,10 +5,10 @@ class SchedulesController < InheritedResources::Base
     @skaters = Skater.all
     @goalies = Goaltender.all
     end
-  private
-    def schedule_params
-      params.require(:schedule).permit(:team1, :score, :team2, :date, :time, :location)
-    end
+    private
+      def schedule_params
+        params.require(:schedule).permit(:team1, :score, :team2, :date, :time, :location)
+      end
 
 
 

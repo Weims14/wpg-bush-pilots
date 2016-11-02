@@ -48,3 +48,4 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'pg', '~> 0.18.4'
