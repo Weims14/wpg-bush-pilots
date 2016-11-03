@@ -14,7 +14,7 @@
             <th>Location</th>
           </tr>
         </thead>
-        <%= render partial: 'schedules/schedule', collection: schedules %>
+        <%= render partial: 'schedules/schedule', collection: schedules.order(id: :asc) %>
       </table>
     </div>
   </div>

@@ -13,7 +13,7 @@
           <th>Location</th>
         </tr>
       </thead>
-      <%= render partial: 'upcoming_games/upcoming_game', collection: upcoming_games %>
+      <%= render partial: 'upcoming_games/upcoming_game', collection: upcoming_games.order(id: :asc) %>
     </table>
   </div>
 </div>
