@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<div id="container">
+<div id="skaterContainer">
   <div class="col-sm-6k table-responsive">
     <h1 class="center">Goalies</h1>
     <table class="table-bordered">
@@ -18,7 +18,9 @@
           <th>Shutouts</th>
         </tr>
       </thead>
+      <tbody>
         <%= render partial: 'goaltenders/goaltender', collection: goaltenders.order(number: :asc) %>
+      </tbody>
    </table>
    <h1 class="center">Skaters</h1>
    <table class="table-bordered">
@@ -34,7 +36,9 @@
          <th>Pim</th>
        </tr>
      </thead>
-     <%= render partial: 'skaters/skater', collection: skaters.order(number: :asc) %>
+     <tbody>
+      <%= render partial: 'skaters/skater', collection: skaters.order(number: :asc) %>
+    </tbody>
    </table>
 
   </div>

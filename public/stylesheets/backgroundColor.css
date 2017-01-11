@@ -11,26 +11,44 @@ thead th
   color: #fff;
   background-color: #1D6718;
 }
+tbody tr:nth-child(even)
+{
+  background-color: #009933;
+  color: white;
+}
+
+tbody tr:hover
+{
+  background-color: #1D6718;
+  color: white;
+}
 nav
 {
   background-color: #1D6718;
   display: inline-block;
   float: none;
-  vertical-align: top;
+  vertical-align: top;  
 }
 ul
 {
   text-align: center;
+  font-size: 20px;
 }
 #nav ul li{
   display: inline;
 
 }
-img
-{
-  width: 100px;
-}
+
 a{
   color: #fff !important;
   text-decoration: none !important;
+}
+a:hover
+{
+  background-color: #009933;
+}
+
+img
+{
+  width: 175px;
 }
