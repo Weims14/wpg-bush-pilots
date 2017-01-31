@@ -27,7 +27,7 @@ nav
   background-color: #1D6718;
   display: inline-block;
   float: none;
-  vertical-align: top;  
+  vertical-align: top;
 }
 ul
 {
@@ -55,5 +55,5 @@ img
 
 .teamPicture
 {
-  width: 400px;
+  width: 500px;
 }
