@@ -1,5 +1,5 @@
 <div class="center">
-  <%= render 'team_records/team_records', team_records: @team_records = TeamRecord.where("active_season = true") %>
+  <%= render 'team_records/team_records', team_records: @team_records %> <!--= TeamRecord.where("active_season = true") -->
 </div>
 <%= render 'upcoming_games/upcoming_games', upcoming_games: @upcoming_games %>
 
