@@ -1,0 +1,1 @@
+json.array! @team_records, partial: 'team_records/team_record', as: :team_record

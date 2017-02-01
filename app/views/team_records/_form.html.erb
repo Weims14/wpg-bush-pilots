@@ -1,0 +1,27 @@
+<%= form_for(team_record) do |f| %>
+  <% if team_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(team_record.errors.count, "error") %> prohibited this team_record from being saved:</h2>
+
+      <ul>
+      <% team_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :season %>
+    <%= f.text_area :season %>
+  </div>
+
+  <div class="field">
+    <%= f.label :season_record %>
+    <%= f.text_area :season_record %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
