@@ -1,2 +1,3 @@
 class Skater < ApplicationRecord
+  
 end
