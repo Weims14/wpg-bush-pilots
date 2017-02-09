@@ -21,7 +21,7 @@ class Goaltender < ApplicationRecord
       0
     else
     gaa = ga.to_f / gp.to_f
-    gaa.round(3)
+    gaa.round(2)
     end
-  end  
+  end
 end
