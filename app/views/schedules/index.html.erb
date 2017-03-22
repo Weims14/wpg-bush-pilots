@@ -1,7 +1,11 @@
 <div class="center">
-  <%= render 'team_records/team_records', team_records: @team_records = TeamRecord.where("active_season = true")%> 
+  <%= render 'team_records/team_records', team_records: @team_records = TeamRecord.where("active_season = true")%>
 </div>
 <%= render 'upcoming_games/upcoming_games', upcoming_games: @upcoming_games %>
-
 <%= render 'shared/skater', skaters: @skaters, goaltenders: @goalies%>
 <%#= render 'schedules', schedules: @schedules %>
+
+
+<div class="col-sm-6 center">
+  <%= image_tag('bushPilots.jpeg', :class => "teamPicture") %>
+</div>

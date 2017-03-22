@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <div id="upcomingGamesContainer">
   <div class="col-sm-6 table-responsive">
-    <h1 class="center">Upcoming Games</h1>
+    <h2 class="center">Upcoming Games</h2>
     <table class="table-bordered">
       <thead>
         <tr>
@@ -17,8 +17,6 @@
         <%= render partial: 'upcoming_games/upcoming_game', collection: upcoming_games.order(id: :asc) %>
       <tbody>
     </table>
-    <div class="center">
-      <%= image_tag('bushPilots.jpeg', :class => "teamPicture") %>
-    </div>
+
   </div>
 </div>
