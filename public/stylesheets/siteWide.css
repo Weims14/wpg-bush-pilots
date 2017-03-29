@@ -48,12 +48,17 @@ a:hover
   background-color: #009933;
 }
 
-img
+.pilotsLogo
 {
   width: 175px;
 }
 
-.teamPicture
+.teamPicture, .winter2016-2017
 {
   width: 70%;
+}
+
+.winter2016_2017
+{
+  width: 100%;
 }
