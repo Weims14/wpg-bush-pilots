@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   root 'schedules#index'
 
-  get "roster.html.erb",   to: "static_pages#roster",   as: "roster"
-  get "schedule.html.erb", to: "static_pages#schedule", as: "staticSchedule"
-  get "seasons.html.erb",   to: "static_pages#seasons",   as: "seasons"
+  get "roster",   to: "static_pages#roster",   as: "roster"
+  get "schedule", to: "static_pages#schedule", as: "staticSchedule"
+  get "seasons",   to: "static_pages#seasons",   as: "seasons"
 end
