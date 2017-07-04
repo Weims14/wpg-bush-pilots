@@ -1,9 +1,9 @@
 class Goaltender < ApplicationRecord
   def gp
-    if wins.blank? || loses.blank?
+    if wins.blank? || loses.blank? || otl.blank?
       0
     else
-      wins + loses
+      wins + loses + otl
     end
   end
 
