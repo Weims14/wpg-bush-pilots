@@ -53,7 +53,7 @@ a:hover
   width: 175px;
 }
 
-.teamPicture, .winter2016-2017
+.teamPicture, .winter2016-2017, .spring2017
 {
   width: 70%;
 }
@@ -61,4 +61,9 @@ a:hover
 .winter2016_2017
 {
   width: 100%;
+}
+
+.spring2017
+{
+  width: 70%;
 }
