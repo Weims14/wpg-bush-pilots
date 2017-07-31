@@ -36,8 +36,11 @@ ul
 }
 #nav ul li{
   display: inline;
+  text-align: center;
 
 }
+
+
 
 a{
   color: #fff !important;
