@@ -37,11 +37,7 @@ ul
 #nav ul li{
   display: inline;
   text-align: center;
-
 }
-
-
-
 a{
   color: #fff !important;
   text-decoration: none !important;
@@ -50,23 +46,18 @@ a:hover
 {
   background-color: #009933;
 }
-
 .pilotsLogo
 {
   width: 175px;
 }
-
-.teamPicture, .winter2016-2017, .spring2017
-{
-  width: 70%;
-}
-
 .winter2016_2017
 {
   width: 100%;
 }
-
 .spring2017
 {
   width: 70%;
+}
+.summer2017{
+  width:100%;
 }
